@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja en Polonia - Oportunidades para Latinoamérica</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Trabaja en Europa</h1>
+            <p>Oportunidades laborales para profesionales latinoamericanos</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Encuentra tu oportunidad laboral en Europa</h2>
+                <p>Regístrate y forma parte de nuestra base de talentos para empresas europeas</p>
+                <button id="showFormBtn" class="cta-button">Aplica ahora</button>
+            </div>
+        </section>
+
+        <section id="registration-form" class="hidden">
+            <h2>Registro de Candidatos</h2>
+            <form id="candidateForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo*</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="habilidades">Habilidades (separadas por comas)*</label>
+                    <input type="text" id="habilidades" name="habilidades" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="experiencia">Años de Experiencia*</label>
+                    <input type="number" id="experiencia" name="experiencia" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="idiomas">Idiomas (separados por comas)*</label>
+                    <input type="text" id="idiomas" name="idiomas" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País de Origen*</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona tu país</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Peru">Perú</option>
+                        <option value="Colombia">Colombia</option>
+                        <!-- Más países latinoamericanos -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cv">Sube tu CV (PDF)*</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf" required>
+                </div>
+
+                <button type="submit" class="cta-button">Enviar Aplicación</button>
+            </form>
+        </section>
+
+        <section id="confirmation" class="hidden">
+            <h2>¡Gracias por aplicar!</h2>
+            <p>Hemos recibido tu información. Nos pondremos en contacto contigo si tu perfil coincide con nuestras oportunidades.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Reclutamiento Europa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/database.js"></script>
+    <script src="scripts/form-handler.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
